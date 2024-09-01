@@ -45,7 +45,22 @@ botonRoma.addEventListener("click",() => {
 });
 
 
+//MODAL GALLERY //
+const imagenes = document.querySelectorAll(".img");
+const modal = document.querySelector (".modal__gallery");
+const modalClose = document.getElementById("modal__close");
+const modalImg = document.querySelector(".modal__img");
 
+imagenes.forEach((imagen) => {
+    imagen.addEventListener ("click", ()=> {
+        modal.style.display = "block";
+        modalImg.src= imagen.src;
+    });
+});
+
+modalClose.addEventListener("click", (e)=> {
+    modal.style.display = "none";
+})
 
 
 

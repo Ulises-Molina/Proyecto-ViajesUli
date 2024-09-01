@@ -28,7 +28,7 @@ body {
     min-height: 7dvh;
     justify-content: space-between;
     box-shadow: 0 0 15px 0 #444;
-    z-index: 10;
+    z-index: 40;
     position: sticky;
     top: 0;
 }
@@ -423,13 +423,11 @@ input[type="checkbox"] {
     animation: aparecer-fotos 1s both;
     animation-timeline: scroll();
 }
-.gallery__item {
-    margin: 20px;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    animation: aparecer-fotos 1s both;
-    animation-timeline: scroll();
+
+.img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
 }
 
 @keyframes aparecer-fotos {
@@ -452,87 +450,15 @@ input[type="checkbox"] {
 .gallery__item:hover {
     margin: 0;
     box-shadow: 0 0 15px 0 #444;
+    cursor: pointer;
 }
 .gallery__item:hover {
     margin: 0;
     box-shadow: 0 0 15px 0 #444;
 }
 
-.gallery__item:first-child {
-    background-image: url(Imagenes/Roma7.jpg);
-}
-
-.gallery__item:nth-child(2) {
-    background-image: url(Imagenes/Vaticano4.jpg);
-    background-position: bottom;
-}
-
-.gallery__item:nth-child(3) {
-    background-image: url(Imagenes/Roma.jpg);
-}
 
 
-.gallery__item:nth-child(4) {
-    background-image: url(Imagenes/Roma6.jpg);
-}
-
-
-.gallery__item:nth-child(5) {
-    background-image: url(Imagenes/Roma3.jpg);
-}
-
-.gallery__item:nth-child(6)  {
-    background-image: url(Imagenes/Roma2.jpg);
-}
-
-.gallery__item:nth-child(7)  {
-    background-image: url(Imagenes/Vaticano2.jpg);
-    
-}
-
-.gallery__item:nth-child(8) {
-    background-image: url(Imagenes/vaticano3.jpg);
-}
-
-.gallery__item:nth-child(9) {
-    background-image: url(Imagenes/Madrid.jpg);
-    display: none;
-}
-
-.gallery__item:nth-child(10) {
-    background-image: url(Imagenes/Madrid3.jpg);
-    display: none;
-}
-
-.gallery__item:nth-child(11) {
-    background-image: url(Imagenes/Madrid4.jpg);
-    display: none;
-}
-
-.gallery__item:nth-child(12) {
-    background-image: url(Imagenes/Madrid5.jpg);
-    display: none;
-}
-
-.gallery__item:nth-child(13) {
-    background-image: url(Imagenes/Madrid2.jpg);
-    display: none;
-}
-
-.gallery__item:nth-child(14) {
-    background-image: url(Imagenes/madrid\ 6.jpg);
-    display: none;
-}
-
-.gallery__item:nth-child(15) {
-    background-image: url(Imagenes/Valencia2.jpg);
-    display: none;
-}
-
-.gallery__item:nth-child(16) {
-    background-image: url(Imagenes/Toledo3.jpg);
-    display: none;
-}
 
 /*--- MAIN MEDIA QUERIES--- */
 
@@ -571,6 +497,46 @@ input[type="checkbox"] {
     .main {
         height: 420dvh;
     }
+}
+
+/*--- MODAL GALLERY SECTION ----*/
+
+.modal__gallery {
+    background-color: #111e;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.contenedor__modal {
+    margin: auto;
+    margin-top: 120px;
+    width: 50%;
+    height: 70%;
+    opacity: 1;
+    z-index: 60;
+}
+
+.modal__img {
+    border-radius: 5px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 60;
+}
+
+#modal__close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 60px;
+    right: 200px;
+    cursor: pointer;
+    color: #fff;
 }
 
 
