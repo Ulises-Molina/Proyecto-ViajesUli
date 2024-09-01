@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <meta name="description" content="Blog de viaje a europa con imagenes e informacion del mismo">
+    <meta name="keywords" content="viaje, viajes, fotos, europa, madrid, españa, francia, paris, italia, roma,florencia,napoli,napoles,cinque-terre,la-spezia,galeria,avion,blog,blog-viajes">
+    <meta name="author" content="Ulises Molina">
+    <meta name="robot" content="noarchive">
+    <meta name="og:title" content="Viajesuli">
+    <meta name="og:description" content="Blog de viaje por europa con imagenes e informacion">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="font.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Imagenes/Logo.png">
+
+</head>
+<body>
+    <div class="contenedor">
+        <form id="formulario">
+            <h2>Formulario de contacto</h2>
+            <fieldset>
+                <legend>Informacion basica</legend>
+                <label>Nombre
+                    <input type="text" id="name" name="name" placeholder="Introduce tu nombre..." autocomplete="off">
+                    <div id="name-error"></div>
+                </label>
+
+                <label>Apellido
+                    <input type="text" id="apellido" name="apellido" placeholder="Introduce tu apellido..." autocomplete="off">
+                    <div id="apellido-error"></div>
+                </label>
+
+                <label>Email de contacto
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" autocomplete="off">
+                    <div id="email-error"></div>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Acerca del contacto</legend>
+                <label>Dejanos tu mensaje
+                    <textarea id="textarea" placeholder="Dejanos tu mensaje aqui..." autocomplete="off"></textarea>
+                    <div id="msj-error"></div>
+                </label>
+                
+                <label>¿Que tipo de usuario sos?
+                    <select id="select">
+                        <option value="Usuario">Usuario/a</option>
+                        <option value="Empresa">Empresa</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <div class="form-terminos">
+                <label>Acepto los <a href="terms.html" target="blank">terminos y condiciones</a>
+                    <input type="checkbox" class="checkbox" required="1">
+                </label>
+            </div>
+            <input type="submit" id="submit" name="submit">
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
