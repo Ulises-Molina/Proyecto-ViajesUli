@@ -3,7 +3,7 @@
 ### Proyecto para aprender desarollo web utilizando HTML,CSS,Javascript 
 
 
-### Blog de viajes, con galeria de imagenes, transiciones.
+### Blog de viajes, con galeria de imagenes, transiciones y animaciones.
 
 ### Tambien posee una aplicacion para saber el clima actual de cualquier ciudad del mundo, realizando un llamado a una API Weather.
 
