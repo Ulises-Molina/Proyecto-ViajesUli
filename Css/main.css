@@ -102,7 +102,7 @@ body {
 
 .wrapper {
     min-height: 93dvh;
-    background-image: url(Imagenes/fondofinal.jpg);
+    background-image: url(../Imagenes/fondofinal.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -381,13 +381,12 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: row;
     background-color: #012840;
-    background-image: url(Imagenes/FONDO\ GALERIA.png);
+    background-image: url(../Imagenes/FONDO\ GALERIA.png);
     background-size: cover;
 }
 
 
 .gallery {
-    height: 90dvh;
     display: grid;
     grid-template-columns: minmax(200px,350px) minmax(200px,350px) minmax(200px,350px) minmax(200px,350px);
     grid-template-rows: 350px 350px;
@@ -447,11 +446,7 @@ input[type="checkbox"] {
 @media screen and (max-width:1200px) {
     .gallery {
         grid-template-columns: minmax(200px,350px) minmax(200px,350px) ;
-        grid-template-rows: repeat(8,300px);
-        height: 90dvh;
-    }
-    .main {
-        height: 200dvh;
+        grid-template-rows: repeat(4,300px);
     }
     .sidebar {
         display: none;
@@ -469,7 +464,6 @@ input[type="checkbox"] {
         animation: none;
     }
     .main {
-        height: 380dvh;
         background-image: none;
         background-color: var(--letter-color);
     }
