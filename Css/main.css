@@ -88,13 +88,6 @@ body {
 
 }
 
-@media screen and (min-width:700px) {
-    .header {
-        animation: movement-header 1s both;
-        animation-timeline: scroll();
-    }
-}
-
 
 /*--HEADER SECTION ENDS--*/
 
@@ -401,31 +394,12 @@ input[type="checkbox"] {
     border-radius: 10px;
     background-size: cover;
     background-position: center;
-    animation: aparecer-fotos 1s both;
-    animation-timeline: scroll();
 }
 
 .img {
     width: 100%;
     height: 100%;
     border-radius: 6px;
-}
-
-@keyframes aparecer-fotos {
-    from{
-        translate: 0px 250px;
-        opacity: 0;
-    }
-    50% {
-        opacity: .8;
-    }
-    75% {
-        opacity: 1;
-    }
-    to {
-        translate: 0px 0px;
-        opacity: 1;
-    }
 }
 
 .gallery__item:hover {
