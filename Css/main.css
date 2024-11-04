@@ -208,53 +208,18 @@ body {
     font-size: 1.5rem;
 }
 
-@keyframes aparecer {
-    from{
-        translate: 390px;
-        opacity: 0;
-    }
-    to {
-        display: block;
-        translate:0;
-        opacity: 1;
-    }
-}
-@keyframes aparecer-texto {
-    from{
-        translate: -500px;
-        opacity: 0;
-    }
-    50% {
-        translate: 0;
-    }
-    
-    to {
-        translate:0;
-        opacity: 1;
-    }
-}
-
 /*--SEPARATOR MEDIA QUERIES--*/
 
 @media screen and (max-width:700px) {
     .separator {
         flex-direction: column;
     }
-    .separator__info {
-        animation: none;
-
-    }
     .separator__img-container img {
         display: none;
     }
 }
 
-@media screen and (max-width:1850px) {
-    .separator__img-container img {
-        animation: none;
-    }
-    
-}
+
 
 /*--SEPARATOR SECTION ENDS--*/
 
